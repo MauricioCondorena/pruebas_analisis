@@ -1,0 +1,386 @@
+/* CONTENEDOR GENERAL */
+.matriz {
+  padding: 10px 0 0;
+}
+
+/* TÍTULO */
+.titulo {
+  margin: 0 0 14px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #0b1220;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* CONTENEDOR DE BOTONES */
+.acciones {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 210, 92, 1) 0%,
+    rgba(245, 180, 0, 1) 100%
+  );
+  color: #111827;
+  border: 1px solid rgba(245, 180, 0, 0.55);
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  box-shadow: 0 6px 14px rgba(245, 180, 0, 0.18);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(245, 180, 0, 0.28);
+}
+
+/* BOTÓN SECUNDARIO */
+.btn-sec {
+  background: #eef2f7;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  color: #0f172a;
+}
+
+.btn-sec:hover {
+  background: #e5ebf3;
+  transform: translateY(-1px);
+}
+
+/* LIENZO */
+.lienzo {
+  height: 390px;
+  border: 2px dashed rgba(245, 180, 0, 0.85);
+  border-radius: 22px;
+  margin-bottom: 24px;
+  background:
+    radial-gradient(circle at top, rgba(245, 180, 0, 0.08), transparent 35%),
+    linear-gradient(180deg, #fffdf7 0%, #ffffff 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(245, 180, 0, 0.08),
+    0 10px 25px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+  position: relative;
+}
+
+.lienzo {
+  background: radial-gradient(
+    circle at center,
+    rgba(245, 180, 0, 0.08),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* RESULTADO */
+/* CONTENEDOR GENERAL */
+.matriz {
+  padding: 10px 0 0;
+}
+
+/* TÍTULO */
+.titulo {
+  margin: 0 0 14px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #0b1220;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* CONTENEDOR DE BOTONES */
+.acciones {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 210, 92, 1) 0%,
+    rgba(245, 180, 0, 1) 100%
+  );
+  color: #111827;
+  border: 1px solid rgba(245, 180, 0, 0.55);
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  box-shadow: 0 6px 14px rgba(245, 180, 0, 0.18);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(245, 180, 0, 0.28);
+}
+
+/* BOTÓN SECUNDARIO */
+.btn-sec {
+  background: #eef2f7;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  color: #0f172a;
+}
+
+.btn-sec:hover {
+  background: #e5ebf3;
+  transform: translateY(-1px);
+}
+
+/* LIENZO */
+.lienzo {
+  height: 390px;
+  border: 2px dashed rgba(245, 180, 0, 0.85);
+  border-radius: 22px;
+  margin-bottom: 24px;
+  background:
+    radial-gradient(circle at top, rgba(245, 180, 0, 0.08), transparent 35%),
+    linear-gradient(180deg, #fffdf7 0%, #ffffff 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(245, 180, 0, 0.08),
+    0 10px 25px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+  position: relative;
+}
+
+/* RESULTADO */
+.resultado-card {
+  margin-top: 6px;
+  padding: 22px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.08);
+}
+.resultado-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(245, 180, 0, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* TITULOS INTERNOS */
+.resultado-card h3 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #0b1220;
+  position: relative;
+  z-index: 1;
+}
+
+.resultado-card h3:not(:first-of-type) {
+  margin-top: 26px;
+}
+
+
+.resultado-card h3:not(:first-child) {
+  margin-top: 22px;
+}
+
+/* CAMINO */
+.camino {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 26px;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 10px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fff8e7 0%, #fff2c7 100%);
+  border: 1px solid rgba(245, 180, 0, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  position: relative;
+  z-index: 1;
+}
+
+/* LISTA DE HOLGURAS */
+.resultado-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.resultado-card li {
+  margin: 0;
+  font-size: 16px;
+  color: #1f2937;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  padding: 12px 14px;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.04);
+}
+
+.resultado-card li b {
+  color: #0b1220;
+}
+
+/* ETIQUETA VISUAL OPCIONAL */
+.resultado-card::before {
+  content: "Resultado";
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #e8f0ff;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 24px;
+  }
+
+  .lienzo {
+    height: 320px;
+  }
+
+  .camino {
+    font-size: 18px;
+  }
+
+  .resultado-card li {
+    font-size: 15px;
+  }
+}
+
+/* TITULOS INTERNOS */
+.resultado-card h3 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #0b1220;
+}
+
+.resultado-card h3:not(:first-child) {
+  margin-top: 22px;
+}
+
+/* CAMINO */
+.camino {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 8px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #fff7db;
+  border: 1px solid rgba(245, 180, 0, 0.35);
+}
+
+/* LISTA DE HOLGURAS */
+.resultado-card ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.resultado-card li {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #1f2937;
+}
+
+/* ETIQUETA VISUAL OPCIONAL */
+.resultado-card::before {
+  content: "Resultado";
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e8f0ff;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 24px;
+  }
+
+  .lienzo {
+    height: 320px;
+  }
+
+  .camino {
+    font-size: 18px;
+  }
+
+  .resultado-card li {
+    font-size: 15px;
+  }
+}
+/* PANEL SUPERIOR */
+.panel-controles {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* INPUTS */
+.panel-controles input {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  font-weight: 600;
+  outline: none;
+}
+
+.panel-controles input:focus {
+  border-color: #f5b400;
+  box-shadow: 0 0 0 3px rgba(245, 180, 0, 0.2);
+}
+
+.select-modo {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #fff;
+  border: 1px solid #475569;
+}
